@@ -27,10 +27,8 @@ Before installing the project, make sure you have the following:
 * A **Chromium-based browser**, such as:
 
   * Google Chrome
-  * Brave
   * Microsoft Edge
   * Chromium
-  * or another Chromium-based browser
 
 The browser must be installed on the device because the scraper uses it to access Google Maps.
 
@@ -231,7 +229,9 @@ google-reviews-scraper/
 ├── main.py
 ├── url.py
 ├── r.txt
-└── ...
+├── database.py
+├── cleaner.py
+└── browser.py
 ```
 
 ### `main.py`
@@ -246,6 +246,19 @@ Contains the Google Maps places/URLs that you want to scrape.
 
 Contains the Python dependencies required by the project.
 
+### `database.py`
+
+Creates and manages the SQLite database used for storing scraped review data.
+
+### `cleaner.py`
+
+Cleans scraped data by removing non-ASCII characters.
+
+### `browser.py`
+
+Opens the browser, used to scrape.
+
+
 ## Notes
 
 * Google Maps can change its website structure at any time, which may affect scraping.
@@ -254,6 +267,10 @@ Contains the Python dependencies required by the project.
 * Google may occasionally require sign-in or otherwise restrict access to reviews.
 * A Chromium-based browser must be installed on the machine running the scraper.
 * Use the reviews-section URL only as a fallback when the normal Google Maps place URL cannot retrieve reviews.
+* To use a browser other than Chrome, enter the browser's name in line 8 of browser.py. Ex: To use Edge, change it to:
+  ```bash
+  browser="edge",
+  ```
 
 ## Quick Start
 
