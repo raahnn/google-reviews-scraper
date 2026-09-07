@@ -1,0 +1,25 @@
+[
+  {
+    "source": "restaurant",
+    "name": "name",
+    "rating": "5 stars",
+    "date": "X months ago",
+    "meal_type": "Lunch",
+    "price_per_person": "",
+    "atmosphere": "4",
+    "parking_options": "",
+    "recommended_dishes": "",
+    "food": "5",
+    "service": "3",
+    "noise_level": "",
+    "wait_time": "",
+    "seating": "",
+    "accessibility": "",
+    "reservations": "",
+    "payment_options": "",
+    "kid_friendliness": "",
+    "dietary_restrictions": "",
+    "popular_times": "",
+    "text": "review example"
+}
+]
